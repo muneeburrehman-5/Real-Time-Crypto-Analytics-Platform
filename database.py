@@ -1,14 +1,13 @@
 import psycopg2
-import os
 
 def get_connection():
 
     conn = psycopg2.connect(
-        host=os.getenv("DB_HOST"),
-        database=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        port=os.getenv("DB_PORT"),
+        host="ep-orange-glitter-aq8wpv2j-pooler.c-8.us-east-1.aws.neon.tech",
+        database="crypto_db",
+        user="neondb_owner",
+        password="npg_yOkZf1E5RAeP",
+        port="5432",
         sslmode="require"
     )
 
