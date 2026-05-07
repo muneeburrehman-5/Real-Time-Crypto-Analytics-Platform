@@ -3,7 +3,8 @@ Real-Time Crypto Analytics Platform
 🚀 A Real-Time Crypto Analytics Platform built using Python, PostgreSQL, Streamlit, and ETL pipelines.
 This project extracts live cryptocurrency market data from the CoinGecko API, transforms it using Pandas, stores it in PostgreSQL, and visualizes real-time insights through an interactive Streamlit dashboard.
 
-📌 Features
+📌 Features:
+
 Real-time cryptocurrency market analytics
 Automated ETL pipeline
 Live data extraction from CoinGecko API
@@ -22,7 +23,8 @@ Streamlit
 APScheduler
 Psycopg2
 CoinGecko API
-📂 Project Structure
+
+📂 Project Structure:
 Real-Time-Crypto-Analytics-Platform/
 │
 ├── database.py
@@ -35,7 +37,8 @@ Real-Time-Crypto-Analytics-Platform/
 ├── requirements.txt
 └── data/
     └── raw.json
-⚙️ How the Project Works
+    
+⚙️ How the Project Works:
 1️⃣ Extract:
 
 The project fetches live cryptocurrency data from the CoinGecko API.
@@ -43,21 +46,23 @@ The project fetches live cryptocurrency data from the CoinGecko API.
 File:
 
 extract.py
+
 2️⃣ Transform:
 
 The raw API data is cleaned and transformed using Pandas.
 
 Operations performed:
 
-Selecting required columns
-Removing null values
-Renaming columns
-Creating volatility score
-Adding extraction timestamp
+Selecting required columns,
+Removing null values,
+Renaming columns,
+Creating volatility score,
+Adding extraction timestamp,
 
 File:
 
 transform.py
+
 3️⃣ Load:
 
 The transformed data is inserted into a PostgreSQL database.
@@ -65,6 +70,7 @@ The transformed data is inserted into a PostgreSQL database.
 File:
 
 load.py
+
 4️⃣ ETL Automation:
 
 The ETL pipeline automatically runs every 5 minutes using APScheduler.
@@ -72,6 +78,7 @@ The ETL pipeline automatically runs every 5 minutes using APScheduler.
 File:
 
 etl_pipeline.py
+
 5️⃣ Dashboard
 
 The Streamlit dashboard visualizes:
@@ -84,6 +91,7 @@ Real-time updates
 File:
 
 dashboard.py
+
 🗄️ Database Schema:
 
 Table Name:
@@ -104,7 +112,8 @@ price_change_24h	FLOAT
 market_cap_rank	INTEGER
 extracted_at	TIMESTAMP
 volatility_score	FLOAT
-🚀 Installation & Setup
+
+🚀 Installation & Setup:
 Step 1 — Clone Repository
 git clone https://github.com/your-username/Real-Time-Crypto-Analytics-Platform.git
 Step 2 — Open Project Folder
@@ -157,21 +166,21 @@ https://api.coingecko.com/api/v3/coins/markets
 
 This project helped in learning:
 
-ETL pipeline development
-API integration
-PostgreSQL database management
-Data cleaning & transformation
-Streamlit dashboard development
-Real-time analytics
-Python automation
-Cloud deployment basics
-🔥 Future Improvements
-Add machine learning predictions
-Deploy ETL pipeline on cloud server
-Add user authentication
-Add advanced crypto analytics
-Add live websocket streaming
-Dockerize the project
+ETL pipeline development,
+API integration,
+PostgreSQL database management,
+Data cleaning & transformation,
+Streamlit dashboard development,
+Real-time analytics,
+Python automation,
+Cloud deployment basics,
+🔥 Future Improvements,
+Add machine learning predictions,
+Deploy ETL pipeline on cloud server,
+Add user authentication,
+Add advanced crypto analytics,
+Add live websocket streaming,
+Dockerize the project,
 
 👨‍💻 Author
 Muhammad Muneeb ur Rehman
