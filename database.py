@@ -1,17 +1,21 @@
 import psycopg2
+import os
 
 def get_connection():
+
     conn = psycopg2.connect(
-        host="localhost",
-        database="crypto_db",
-        user="postgres",
-        password="muneeb@123",  # change this
-        port="5432"
+        host=os.getenv("DB_HOST"),
+        database=os.getenv("DB_NAME"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        port=os.getenv("DB_PORT")
     )
+
     return conn
 
 
 def create_table():
+
     conn = get_connection()
     cur = conn.cursor()
 
@@ -26,11 +30,13 @@ def create_table():
         total_volume BIGINT,
         price_change_24h FLOAT,
         market_cap_rank INTEGER,
-        extracted_at TIMESTAMP
+        extracted_at TIMESTAMP,
+        volatility_score FLOAT
     );
     """)
 
     conn.commit()
+
     cur.close()
     conn.close()
 

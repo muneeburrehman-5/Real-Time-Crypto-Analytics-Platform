@@ -1,12 +1,14 @@
 from extract import extract
 from transform import transform
 from load import load
-from apscheduler.schedulers.blocking import BlockingScheduler
+from database import create_table
 
- 
+
 def run_pipeline():
 
     print("Running ETL...")
+
+    create_table()
 
     data = extract()
 
@@ -19,9 +21,4 @@ def run_pipeline():
 
 if __name__ == "__main__":
 
-    scheduler = BlockingScheduler()
-    scheduler.add_job(run_pipeline, 'interval', minutes=5)
-
-    print("Scheduler started...")
-
-    scheduler.start()
+    run_pipeline()
