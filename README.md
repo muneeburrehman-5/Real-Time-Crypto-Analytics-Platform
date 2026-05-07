@@ -5,38 +5,39 @@ This project extracts live cryptocurrency market data from the CoinGecko API, tr
 
 📌 Features:
 
-Real-time cryptocurrency market analytics
-Automated ETL pipeline
-Live data extraction from CoinGecko API
-PostgreSQL database integration
-Data transformation using Pandas
-Interactive Streamlit dashboard
-Market cap analysis
-Top gainers tracking
-Volatility analysis
-Automated scheduling using APScheduler
-🛠️ Tech Stack
-Python
-Pandas
-PostgreSQL
-Streamlit
-APScheduler
-Psycopg2
-CoinGecko API
+Real-time cryptocurrency market analytics,
+Automated ETL pipeline,
+Live data extraction from CoinGecko API,
+PostgreSQL database integration,
+Data transformation using Pandas,
+Interactive Streamlit dashboard,
+Market cap analysis,
+Top gainers tracking,
+Volatility analysis,
+Automated scheduling using APScheduler,
+
+🛠️ Tech Stack:
+Python,
+Pandas,
+PostgreSQL,
+Streamlit,
+APScheduler,
+Psycopg2,
+CoinGecko API,
 
 📂 Project Structure:
 Real-Time-Crypto-Analytics-Platform/
 │
-├── database.py
-├── extract.py
-├── transform.py
-├── load.py
-├── etl_pipeline.py
-├── analysis.py
-├── dashboard.py
-├── requirements.txt
-└── data/
-    └── raw.json
+├── database.py.
+├── extract.py.
+├── transform.py.
+├── load.py.
+├── etl_pipeline.py.
+├── analysis.py.
+├── dashboard.py.
+├── requirements.txt.
+└── data/.
+    └── raw.json.
     
 ⚙️ How the Project Works:
 1️⃣ Extract:
